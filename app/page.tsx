@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Home.module.css";
 import desktopHeader from "./assets/images/desktop-header.jpg";
+import mobileHeader from "./assets/images/mobile-header.jpg";
 
 export default function Home() {
 	return (
@@ -35,6 +36,11 @@ export default function Home() {
 					src={desktopHeader}
 					alt=""
 					className={styles.desktopHeader}
+				/>
+				<Image
+					src={mobileHeader}
+					alt=""
+					className={styles.mobileHeader}
 				/>
 				<div className={styles.filter} />
 			</section>

@@ -83,3 +83,46 @@
 	font-weight: 500;
 	letter-spacing: 3px;
 }
+
+.mobileHeader {
+	display: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 800px) {
+	.main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.header {
+		text-align: center;
+	}
+
+	.content {
+		text-align: center;
+	}
+
+	.right {
+		height: 300px;
+	}
+
+	.indices {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.index {
+		text-align: center;
+	}
+
+	.mobileHeader {
+		display: block;
+	}
+
+	.desktopHeader {
+		display: none;
+	}
+}
